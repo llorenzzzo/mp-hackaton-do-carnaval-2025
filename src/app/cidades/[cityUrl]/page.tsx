@@ -63,9 +63,7 @@ export default async function Bloco(props: PageProps) {
                 <Calendar />
               </SelectIcon>
               <SelectInput>
-                <option disabled defaultValue="true">
-                  Selecione a data
-                </option>
+                <option defaultValue="true">Selecione a data</option>
               </SelectInput>
             </Select>
             <Select>
@@ -73,9 +71,7 @@ export default async function Bloco(props: PageProps) {
                 <MapPinned />
               </SelectIcon>
               <SelectInput>
-                <option disabled defaultValue="true">
-                  Filtrar por bairro
-                </option>
+                <option defaultValue="true">Filtrar por bairro</option>
               </SelectInput>
             </Select>
             <Select>
@@ -83,9 +79,7 @@ export default async function Bloco(props: PageProps) {
                 <ListFilter />
               </SelectIcon>
               <SelectInput>
-                <option disabled defaultValue="true">
-                  Ordenar por
-                </option>
+                <option defaultValue="true">Ordenar por</option>
                 <option>Mais longe primeiro</option>
                 <option>Mais próximos primeiro</option>
               </SelectInput>
