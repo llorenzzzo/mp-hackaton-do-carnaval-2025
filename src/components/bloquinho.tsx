@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, MapPin, MapPinned, Ticket } from "lucide-react";
+import { Calendar, MapPinned, Ticket } from "lucide-react";
 import { Button } from "./button";
 import { useRouter } from "next/navigation";
 import { formatDate } from "@/utils/formattedDate";

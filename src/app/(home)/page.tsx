@@ -6,6 +6,14 @@ import { Bloquinho } from "@/components/bloquinho";
 import { Select, SelectIcon, SelectInput } from "@/components/select";
 import { Input, InputIcon, InputRoot } from "@/components/input";
 
+interface BloquinhoProps {
+  title: string;
+  date_time: string;
+  neighborhood: string;
+  price: string;
+  id: string;
+}
+
 export default async function Home() {
   const response = await fetch(
     "https://apis.codante.io/api/bloquinhos2025/agenda"
@@ -63,7 +71,7 @@ export default async function Home() {
         <div className="max-w-[1240px] mx-auto px-6 mt-20">
           <SectionHeading title="Próximos Blocos" />
           <div className="flex flex-row flex-wrap mt-6 gap-6 ">
-            {blocos.data.map((bloquinho: any) => (
+            {blocos.data.map((bloquinho: BloquinhoProps) => (
               <Bloquinho
                 key={bloquinho.id}
                 title={bloquinho.title}

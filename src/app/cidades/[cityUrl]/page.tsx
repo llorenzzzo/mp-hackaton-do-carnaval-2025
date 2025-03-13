@@ -9,10 +9,17 @@ import {
   ArrowRight,
   Calendar,
   ListFilter,
-  MapPin,
   MapPinned,
   Search,
 } from "lucide-react";
+
+interface BloquinhoProps {
+  title: string;
+  date_time: string;
+  neighborhood: string;
+  price: string;
+  id: string;
+}
 
 interface PageProps {
   params: Promise<{
@@ -85,7 +92,7 @@ export default async function Bloco(props: PageProps) {
             </Select>
           </div>
           <div className="w-full max-w-[1240px] items-center justify-center flex flex-row flex-wrap mt-6 gap-6 ">
-            {blocos.data.map((bloquinho: any) => (
+            {blocos.data.map((bloquinho: BloquinhoProps) => (
               <Bloquinho
                 key={bloquinho.id}
                 title={bloquinho.title}
