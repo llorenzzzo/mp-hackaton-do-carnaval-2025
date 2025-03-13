@@ -96,9 +96,7 @@ export default async function Bloco(props: PageProps) {
             <h2 className="font-heading text-3xl">Valor do Ingresso</h2>
           </div>
           <p className="text-[#333333] font-bold text-pretty">
-            {blocoAtual.price === "Grátis"
-              ? blocoAtual.price
-              : `R$${blocoAtual.price}`}
+            {blocoAtual.price}
           </p>
         </div>
         {blocoAtual.date_time && (
