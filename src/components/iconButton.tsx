@@ -1,6 +1,6 @@
 import { ComponentProps } from "react";
 
-interface IconButtonProps extends ComponentProps<"button"> {}
+type IconButtonProps = ComponentProps<"button">;
 
 export function IconButton(props: IconButtonProps) {
   return (

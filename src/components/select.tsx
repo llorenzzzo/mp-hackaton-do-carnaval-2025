@@ -15,13 +15,13 @@ export function Select({ children, ...props }: SelectProps) {
   );
 }
 
-interface SelectIconProps extends ComponentProps<"span"> {}
+type SelectIconProps = ComponentProps<"span">;
 
 export function SelectIcon(props: SelectIconProps) {
   return <span className="text-purple-300 cursor-pointer" {...props}></span>;
 }
 
-interface SelectInputProps extends ComponentProps<"select"> {}
+type SelectInputProps = ComponentProps<"select">;
 
 export function SelectInput(props: SelectInputProps) {
   return <select className="outline-0 cursor-pointer" {...props}></select>;

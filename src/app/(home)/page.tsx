@@ -5,7 +5,6 @@ import { Footer } from "@/components/footer";
 import { Bloquinho } from "@/components/bloquinho";
 import { Select, SelectIcon, SelectInput } from "@/components/select";
 import { Input, InputIcon, InputRoot } from "@/components/input";
-import { formatDate } from "@/utils/formattedDate";
 
 export default async function Home() {
   const response = await fetch(
