@@ -33,7 +33,7 @@ export default async function Home() {
                 <MapPin />
               </SelectIcon>
               <SelectInput>
-                <option>Selecione a cidade</option>
+                <option defaultValue="true">Selecione a cidade</option>
                 <option value="São%20Paulo">São Paulo</option>
                 <option value="Rio%20de%20Janeiro">Rio de Janeiro</option>
                 <option value="Belo%20Horizonte">Belo Horizonte</option>
@@ -49,8 +49,7 @@ export default async function Home() {
                 <Calendar />
               </SelectIcon>
               <SelectInput>
-                <option>Selecione a data</option>
-                <option>1</option>
+                <option defaultValue="true">Selecione a data</option>
               </SelectInput>
             </Select>
             <InputRoot>
